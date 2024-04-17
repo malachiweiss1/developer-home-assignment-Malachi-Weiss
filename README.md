@@ -19,10 +19,12 @@ Installation
 Clone this repository to your local machine:
 
 
-git clone https://github.com/your-username/task-manager.git
+git clone https://github.com/malachiweiss1/developer-home-assignment-Malachi-Weiss.git
+
 Navigate to the project directory:
 
-cd task-manager
+cd developer-home-assignment-Malachi-Weiss
+
 Install dependencies for the backend:
 
 
@@ -30,25 +32,33 @@ cd backend
 python -m venv myvenv
 source myvenv/Scripts/activate  # For Windows
 pip install -r requirements.txt
+
 Configure the MySQL database:
 
 Open the backend/config.yaml file and enter your MySQL database credentials (and Hugchat details - Optional).
+
 Run the data generation script (optional):
 
 python generate_data.py
+
 Start the backend server:
 
 python server.py
+
 Install dependencies for the frontend:
 
 cd ../frontend/frontend-app
+
 npm install
+
 Start the frontend development server:
 
 npm start
+
 Open your browser and visit http://localhost:3000 to view the application.
 
 Usage
+
 Once the application is running, you can start managing your tasks immediately. 
 Use the interface to add, edit, and delete tasks as needed. 
 All changes will be reflected in real-time.
