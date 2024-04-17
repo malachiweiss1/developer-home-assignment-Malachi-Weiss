@@ -1,88 +1,54 @@
-# Developer Home Assignment
+Task Manager Web Application
+Welcome to the Task Manager Web Application! 
+This full-stack project provides a convenient way to manage your tasks with a user-friendly interface. 
+You can easily add, edit, and delete tasks, and view them all at a glance.
 
-Homework for a programmer position at Tech-19
+Features
+Task Management: Add, edit, and delete tasks seamlessly.
+User Interface: Intuitive interface for easy task management.
+Backend Server: Utilizes a backend server to handle data operations.
+MySQL Database: Stores task data efficiently in a MySQL database.
+Data Generation: Includes a script to generate sample data for testing purposes.
+Getting Started
+Follow these steps to get the project up and running on your local machine:
 
-## **Developer Test: Building a Database, API, and Frontend Application**
+Prerequisites
+Node.js and npm installed on your system.
+Python installed on your system.
+Installation
+Clone this repository to your local machine:
 
-> ### Task Overview:
 
-You are tasked with creating a simple web application that allows users to manage a list of tasks. This application should consist of three main components: a database to store task data, an API to interact with the database, and a basic frontend application to provide a user interface.
+git clone https://github.com/your-username/task-manager.git
+Navigate to the project directory:
 
-> ### Requirements:
+cd task-manager
+Install dependencies for the backend:
 
-1. **Database:**
-   
-- Use any SQL database of your choice (e.g., PostgreSQL, MySQL).
-- Create a table named `tasks` the following columns:
-  - id (integer, primary key)
-  - title (string)
-  - description (text)
-  - completed (boolean)
 
-2. **API:**
-   
-- Build a Python-based API using a framework of your choice (e.g., Flask, Django, FastAPI).
-- The API should have the following endpoints:
-  - GET /tasks: Retrieve a list of all tasks.
-  - GET /tasks/{id}: Retrieve details of a specific task by its ID.
-  - POST /tasks: Create a new task.
-  - PUT /tasks/{id}: Update an existing task by its ID.
-  - DELETE /tasks/{id}: Delete a task by its ID.
+cd backend
+python -m venv myvenv
+source myvenv/Scripts/activate  # For Windows
+pip install -r requirements.txt
+Configure the MySQL database:
 
-- Ensure proper error handling and return appropriate status codes.
+Open the backend/config.yaml file and enter your MySQL database credentials (and Hugchat details - Optional).
+Run the data generation script (optional):
 
-3. **Frontend:**
-   
-- Use any frontend framework or library of your choice (e.g., React, Angular, Vue.js).
-- Create a user interface that allows users to:
-  - View a list of tasks.
-  - Add a new task.
-  - Edit an existing task (including marking it as completed).
-  - Delete a task.
-- Make API calls to interact with the backend.
+python generate_data.py
+Start the backend server:
 
-4. **Documentation:**
-   
-- Provide clear and concise documentation for your code.
-- Include instructions on how to set up and run the application locally.
-- Describe the database schema and API endpoints.
-- Include any additional information that may be useful for someone reviewing or using your code.
+python server.py
+Install dependencies for the frontend:
 
-5. **Extra Points (Optional):**
-   
-- Implement user authentication for adding, editing, and deleting tasks.
-- Implement sorting or filtering options for the task list.
-- Implement the ability to link tasks into groups or categories.
+cd ../frontend/frontend-app
+npm install
+Start the frontend development server:
 
-6. **Guidelines:**
+npm start
+Open your browser and visit http://localhost:3000 to view the application.
 
-- You have the creative freedom to choose the specific technologies and libraries you use for this task.
-- You are encouraged to use best practices for code structure, readability, and maintainability.
-- If you encounter any challenges or limitations, feel free to document them in your code and suggest possible solutions.
-
-7. **Submission:**
-
-- To submit your work, please follow these steps:
-
-  1. Fork the provided repository.
-  2. Create a new branch in your fork for this task. You can name it something descriptive like `task-solution`.
-  3. Make your changes on this branch, following the requirements and guidelines provided in the task.
-  4. Ensure that your code is well-documented and adheres to best practices.
-  5. Test your application locally to verify that it functions as expected.
-  6. Commit your changes to the branch with clear and concise commit messages.
-  7. Once you are satisfied with your solution, push the branch to your forked repository.
-  8. Open a Pull Request (PR) from your `task-solution` branch to the main branch of the original repository.
-
-- In your PR description, please include:
-
-  - A brief summary of the changes you made.
-  - Any challenges you encountered and how you overcame them.
-  - If applicable, any additional features or improvements you added beyond the basic requirements.
-
-8. **Submission Deadline:**
-
-You have the flexibility to choose your own deadline to submit the assignment. Please ensure that you submit your Pull Request (PR) before your self-selected deadline. Your submission will be evaluated based on code quality, functionality, adherence to requirements, and any extra points implemented.
-
-<hr>
-
-If you have any questions or need further assistance, feel free to reach out. Good luck!
+Usage
+Once the application is running, you can start managing your tasks immediately. 
+Use the interface to add, edit, and delete tasks as needed. 
+All changes will be reflected in real-time.

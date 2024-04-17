@@ -1,0 +1,9 @@
+database_my_sql_tasks:
+    host: 'localhost'
+    user: 'root'
+    password: '?'
+    database: 'tasks_db'
+
+chatbot_details:
+    email: '?'
+    password: '?'
